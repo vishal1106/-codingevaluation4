@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+  </head>
+  <style>
+    #navbar{
+      display: flex;
+      background-color: antiquewhite;
+    }
+    #search_input{
+      margin-top: 30px;
+      height: 30px;
+      width: 80%;
+      border-radius: 30px;
+      margin-left:80px;
+    }
+    #na{
+      color:blue ;
+      border-bottom: 1px solid blue;
+      margin-left: 10px;
+      font-size: 30px;
+    }
+    #sidebar{
+      width: 200px;
+   
+      background-color: antiquewhite;
+  margin-top: -10px;
+    }
+    
+    #sidebar>h3{
+      padding-left: 10px;
+     margin-bottom: 10px;
+    }
+  #in{
+    background-color: rgb(142, 214, 142);
+    height: 20px;
+    font-size: 20px;
+  }
+  #ch{
+    background-color: rgb(142, 214, 142);
+    height: 30px;
+    font-size: 20px;
+  }
+  #us{
+    background-color: rgb(142, 214, 142);
+    height: 30px;
+    font-size: 20px;
+  }
+  #uk{
+    background-color: rgb(142, 214, 142);
+    height: 30px;
+    width:190px;
+  }
+  #nz{
+    background-color: rgb(142, 214, 142);
+    height: 30px;
+    font-size: 20px;
+  }
+#container{
+ 
+  
+  margin-left: 20px;
+}
+#main {
+  display: flex;
+ 
+}
+.flex{
+  display: flex;
+  border: 1px solid blue;
+  margin-top: 20px;
+  
+}
+.imge>img{
+  height: 200px;
+  width: 220px;
+}
+.name{
+margin-left: 10px;
+}
+  </style>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+
+    <div id="navbar">
+      
+    </div>
+    <div id="main">
+    <div id="sidebar">
+      <h3>Countries</h3>
+      <h3 id="in">Indai</h3>
+      <h3 id="ch">China</h3>
+      <h3 id="us">USA</h3>
+      <h3 id="uk">United Kingdom</h3>
+      <h3 id="nz">New Zeland</h3>
+    </div>
+    
+    <div id="container"></div>
+  </div>
+  </body>
+</html>
+<script type="module" src="/scripts/index.js"></script>
